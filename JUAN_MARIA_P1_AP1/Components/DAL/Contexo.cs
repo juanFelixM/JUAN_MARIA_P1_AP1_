@@ -8,7 +8,7 @@ namespace JUAN_MARIA_P1_AP1.Components.DAL
         {
             public Contexto(DbContextOptions<Contexto> Options) : base(Options) { }
 
-            public DbSet<Aportes> Tecnicos { get; set; }
+            public DbSet<Aportes> Aportes { get; set; }
 
         }
 
