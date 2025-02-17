@@ -2,6 +2,9 @@
 {
     public class AportesServices
     {
-
+        public AportesServices(Contexto context)
+        {
+            _context = context;
+        }
     }
 }
