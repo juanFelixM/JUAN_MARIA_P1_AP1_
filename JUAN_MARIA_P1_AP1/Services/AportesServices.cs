@@ -7,8 +7,7 @@ namespace JUAN_MARIA_P1_AP1.Services;
 
 public class AportesServices(IDbContextFactory<Contexto> DbFactory)
 {
-    private Aportes Aporte;
-
+ 
     // MÉTODO GUARDAR
     public async Task<bool> Guardar(Aportes aporte)
     {
