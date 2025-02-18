@@ -1,4 +1,6 @@
 using JUAN_MARIA_P1_AP1.Components;
+using JUAN_MARIA_P1_AP1.Components.DAL;
+using Microsoft.EntityFrameworkCore;
 using static JUAN_MARIA_P1_AP1.Components.DAL.Contexo;
 
 internal class Program
@@ -17,6 +19,10 @@ internal class Program
 
         //agregando contexto
         object value = builder.Services.AddDbContext<Contexto>(options => options.UseSqlServer(ConStr));
+
+        //Inyeccion del service
+        builder.Services.AddScoped<AportesService>();
+
 
 
         var app = builder.Build();
